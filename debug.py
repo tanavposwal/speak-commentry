@@ -35,8 +35,9 @@ try:
 
     for div in divs:
         tables = div.find_elements(By.TAG_NAME, "table")
-        speak_commentary(tables[0].text)
+        print(tables[0].text)
         # for table in tables:
+        #     speak_commentary(table.text)
         #     print(table.text)
 
 except Exception as e:
